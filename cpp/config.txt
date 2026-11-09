@@ -1,0 +1,57 @@
+########################################
+# Branch and Bound Configuration
+########################################
+# Numerical tolerance for optimality
+BB_TOL = 1e-4
+# Number of threads: 1  -> single-thread; > 1 -> multi-thread (number of threads)
+BB_THREADS = 1
+# Maximum number of nodes to explore
+BB_MAX_NODES = 1000
+# Time limit in seconds
+BB_TIME_LIMIT = 10800
+# Node visiting strategy: 0 -> Best-first; 1 -> Depth-first; 2 -> Breadth-first
+BB_VISITING_STRATEGY = 0
+
+########################################
+# MATLAB Session Configuration
+########################################
+# Threads used by MATLAB at the root node
+MATLAB_SESSION_THREADS_ROOT = 14
+# Threads used by MATLAB at child nodes
+MATLAB_SESSION_THREADS_CHILD = 14
+# Path to MATLAB source folder for the algorithm
+MATLAB_SOURCE_FOLDER = /path/to/MVkSP-SDP/matlab/
+
+########################################
+# External Solvers
+########################################
+# Path to Gurobi installation
+GUROBI_FOLDER = /path/to/gurobi/
+# Path to SDPNAL+ solver
+SDPNAL_FOLDER = /path/to/SDPNAL+/
+
+########################################
+# SDP Solver (SDPNAL+) Configuration
+########################################
+# Facial reduction: 0 -> do not use it; 1 -> use it
+SDP_FR = 1
+# Solver accuracy tolerance
+SDP_SOLVER_TOL = 1e-5
+# Verbosity: 0 -> silent; 1 -> verbose output
+SDP_SOLVER_VERBOSE = 0
+
+########################################
+# Cutting Plane Configuration
+########################################
+# Maximum number of cutting-plane iterations
+CP_MAX_ITER = 100
+# Tolerance for cutting-plane convergence
+CP_TOL = 1e-4
+# Maximum number of inequalities to separate
+CP_MAX_INEQ = 100000
+# Maximum number of newly added violated inequalities per iteration
+CP_NEW_INEQ = 5000
+# Tolerance for violation detection
+CP_EPS_INEQ = 1e-4
+# Tolerance for identifying active inequalities
+CP_EPS_ACTIVE = 1e-4
