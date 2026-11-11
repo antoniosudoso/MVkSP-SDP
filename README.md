@@ -2,7 +2,7 @@
 
 **MVkSP-SDP** is branch-and-cut algorithm for the minimum variance *k*-subset problem (MVkSP). Given $n$ points in Euclidean space and a cardinality $k$, the problem selects exactly $k$ points that minimize their average squared distance from their centroid.
 
-This repository contains the C++ and MATLAB source code associated with the paper ["Optimality Guarantees for Minimum Variance Subset Selection via Semidefinite Programming"](paper.pdf) by Antonio M. Sudoso and Daniel Aloise.
+This repository contains the C++ and MATLAB source code associated with the paper ["Optimality Guarantees for Minimum Variance Subset Selection via Semidefinite Programming"](http://arxiv.org/abs/2611.13220) by Antonio M. Sudoso and Daniel Aloise.
 
 ## Repository structure
 
@@ -16,7 +16,6 @@ This repository contains the C++ and MATLAB source code associated with the pape
 │   ├── matlab_util.*             # MATLAB Engine interface
 │   ├── config.txt                # Runtime configuration
 │   ├── Makefile                  # C++ build instructions
-│   └── run.sh                    # Example batch script
 ├── matlab/
 │   ├── solve_MVkSP_sdpnalplus.m  # SDP cutting-plane procedure
 │   ├── build_MVkSP_*.m           # Original and facially reduced SDP models
@@ -190,10 +189,11 @@ If you use this code, please cite:
 > A. M. Sudoso and D. Aloise, "Optimality Guarantees for Minimum Variance Subset Selection via Semidefinite Programming" arXiv, 2026.
 
 ```bibtex
-@article{SudosoAloise2026MVkSP,
-  author = {Antonio M. Sudoso and Daniel Aloise},
-  title  = {Optimality Guarantees for Minimum Variance Subset Selection via Semidefinite Programming},
-  year   = {2026},
-  note   = {Manuscript}
+@article{sudoso2026optimality,
+  title={Optimality Guarantees for Minimum Variance Subset Selection via Semidefinite Programming},
+  author={Sudoso, Antonio M. and Aloise, Daniel},
+  journal={arXiv preprint arXiv:2611.13220},
+  year={2026},
+  doi={10.48550/arXiv.2611.13220}
 }
 ```
